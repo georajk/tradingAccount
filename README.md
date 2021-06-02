@@ -32,15 +32,14 @@ java -jar tradingAccount-0.0.1-SNAPSHOT.jar
         }
     ```
   
-  b. to get an Account events fire post call with the below request body ` http://localhost:9080/api/getAccount`
+    b. to get an Account events fire post call with the below request body ` http://localhost:9080/api/getAccount`
     
-    Request Body
-   ```json
-  {
-        "account": "ACC",
-        "security": "SECXYZ"
-    }
-    
-    ```
+        Request Body
+      
+          {
+            "account": "ACC",
+            "security": "SECXYZ"
+          }
+
    
    
