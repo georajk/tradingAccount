@@ -1,15 +1,14 @@
 package com.trading.account.book;
 
-import com.trading.account.model.TradeEvent;
 import com.trading.account.model.TradeKey;
 
 import com.trading.account.model.TradeVO;
-import org.springframework.context.annotation.Configuration;
 
-import java.util.ArrayList;
+import org.springframework.stereotype.Component;
+
 import java.util.concurrent.ConcurrentHashMap;
 
-@Configuration
+@Component
 public class PositionBookImpl implements PositionBook {
 
     private final ConcurrentHashMap<TradeKey, TradeVO> cache = new ConcurrentHashMap<>();
