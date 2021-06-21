@@ -17,7 +17,7 @@ public class TradingExceptionHandler extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler(TradingException.class)
-    protected ResponseEntity<Object> handlePrimeNumberException(TradingException ex) {
+    protected ResponseEntity<Object> handleException(TradingException ex) {
         TradingError apiError = new TradingError(HttpStatus.BAD_REQUEST);
         apiError.setMessage(ex.getMessage());
         return buildResponseEntity(apiError);
